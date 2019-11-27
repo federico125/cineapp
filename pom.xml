@@ -16,6 +16,8 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+		<!-- SE AGREGA DEPENDENCIA DE SPRING DATA JPA -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
@@ -41,11 +43,33 @@
     		<artifactId>mssql-jdbc</artifactId>
     		<version>8.1.0.jre8-preview</version>
 		</dependency>
+		
+		<!-- SE EMBEBE APACHE TOMCAT V9.0.26 -->
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
 		<dependency>
     		<groupId>org.apache.tomcat.embed</groupId>
     		<artifactId>tomcat-embed-core</artifactId>
     		<version>9.0.26</version>
 		</dependency>
+		
+		<!-- SE AGREGAN DEPENDIAS DE SPRING SECURITY -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+		<dependency>
+    		<groupId>org.springframework.security</groupId>
+    		<artifactId>spring-security-web</artifactId>
+    		<version>5.2.1.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+		<dependency>
+    		<groupId>org.springframework.security</groupId>
+    		<artifactId>spring-security-config</artifactId>
+    		<version>5.2.1.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+		<dependency>
+    		<groupId>org.springframework.security</groupId>
+    		<artifactId>spring-security-taglibs</artifactId>
+    		<version>5.2.1.RELEASE</version>
+		</dependency>	
  </dependencies>
 </project>
