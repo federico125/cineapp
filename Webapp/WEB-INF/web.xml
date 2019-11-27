@@ -25,6 +25,17 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+	<!--CONFIGURACION DEL FITRO EN SPRING SECURYTI -->
+	<filter>
+		<filter-name>springSecurityFiltro</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFiltro</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- CONFIGURACION DE PAGINAS DE ERRORES -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
