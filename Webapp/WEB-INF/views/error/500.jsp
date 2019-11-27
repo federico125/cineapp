@@ -32,8 +32,7 @@
 				<div class="alert alert-danger" role="alert">
 					<h4><span class="label label-warning">Descripción del error</span></h4>
 					${pageContext.exception.message}
-				</div>				
-							
+				</div>							
 				<br>
 				<button class="btn btn-success" onclick="goBack()">REGRESAR</button>
 			</div>
