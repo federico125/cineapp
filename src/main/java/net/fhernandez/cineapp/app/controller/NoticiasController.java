@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import net.fhernandez.cineapp.app.model.Banner;
 import net.fhernandez.cineapp.app.model.Noticia;
 import net.fhernandez.cineapp.app.services.NoticiaService;
 

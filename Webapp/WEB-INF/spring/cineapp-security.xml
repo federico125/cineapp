@@ -12,14 +12,14 @@
 		<intercept-url pattern="/peliculas/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
 		<intercept-url pattern="/horarios/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
 		<intercept-url pattern="/noticias/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
-		<intercept-url pattern="/banners/*" access="hasAnyAuthority('GERENTE')" />
+		<intercept-url pattern="/banner/*" access="hasAnyAuthority('GERENTE')" />
 	</http>
 
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>
-				<user name="luis" password="{noop}luis123" authorities="EDITOR" />
-				<user name="marisol" password="{noop}mari123" authorities="GERENTE" />
+				<user name="Federico" password="{noop}fhernandez" authorities="EDITOR" />
+				<user name="Eli" password="{noop}eGonzales" authorities="GERENTE" />
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>
