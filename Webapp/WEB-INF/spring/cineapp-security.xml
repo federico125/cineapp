@@ -14,7 +14,7 @@
 		<intercept-url pattern="/noticias/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
 		<intercept-url pattern="/banner/*" access="hasAnyAuthority('GERENTE')" />
 		
-		<form-login login-page="/formLogin" />
+		<form-login default-target-url="/admin/index" login-page="/formLogin"/>
 	</http>
 
 	<authentication-manager>

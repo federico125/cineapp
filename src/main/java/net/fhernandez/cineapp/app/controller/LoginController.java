@@ -23,4 +23,10 @@ public class LoginController {
 		//Despues de cerrar la sesión redireccionamos al usuario al formulario de login.
 		return "redirect:/formLogin";
 	}
+	
+	@GetMapping(value="/index") 
+	public String mostrarPrincipalAdmin() { 
+		return "pagBienvenida"; 
+		}
+
 }
