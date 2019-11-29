@@ -1,6 +1,4 @@
 package net.fhernandez.cineapp.app.controller;
-
-import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import net.fhernandez.cineapp.app.model.Banner;
-import net.fhernandez.cineapp.app.model.Horario;
 import net.fhernandez.cineapp.app.model.Noticia;
 import net.fhernandez.cineapp.app.model.pelicula;
 import net.fhernandez.cineapp.app.services.BannerService;
@@ -97,7 +94,6 @@ public class HomeController {
 		model.addAttribute("pelicula", peliculasService.getById(idPelicula));
 		model.addAttribute("listaHorarios", horarioService.getListPersonalizado(idPelicula, fechaEstreno));
 		model.addAttribute("fechaBusqueda", dateFormat.format(fechaEstreno));
-		// TODO - BUSCAR EN LA BASE DE DATOS LOS HORARIOS
 		
 		return "detalle";
 	}
@@ -105,6 +101,11 @@ public class HomeController {
 	@GetMapping(value = "/acerca")
 	String getacerca () {
 		return "acerca";
+	}
+	
+	@RequestMapping(value ="/formLogin", method=RequestMethod.GET)
+	public String verLogin() {
+		return"formLogin";
 	}
 	
 	@InitBinder

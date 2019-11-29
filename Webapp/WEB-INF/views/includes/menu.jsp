@@ -19,7 +19,7 @@
             <li><a href="${urlRoot}banner/indexPaginate?page=0">Banners</a></li>
             <li><a href="${urlRoot}noticias/paginateIndex?page=0">Noticias</a></li>       
             <li><a href="${urlRoot}acerca">Acerca</a></li>
-            <li><a href="${urlRoot}admin/logout">Salir</a></li>
+            <li><a href="${urlRoot}admin/logout">Cerrar Sesión</a></li>
             <li><a href="#">Login</a></li>            
           </ul>
         </div><!--/.nav-collapse -->
