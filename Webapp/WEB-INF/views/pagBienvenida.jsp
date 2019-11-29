@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Error</title>   
+    <title>Bienvenido(a)</title>   
     <spring:url value="/" var="urlRoot"/>
     <spring:url value="/resources" var="urlPublic"></spring:url>
 
