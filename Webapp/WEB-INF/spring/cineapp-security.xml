@@ -30,9 +30,18 @@
 	
 	<!-- El dataSource es el bean que tenemos declarado en nuestro archivo root-context.xml -->
 	<!--Autenticacion desde una base de datos -->
-	<authentication-manager >
+	<!-- <authentication-manager >
 		<authentication-provider>
 			<jdbc-user-service data-source-ref="dataSource" />
+		</authentication-provider>
+	</authentication-manager> -->
+	
+	<!--Autenticacion desde una base de datos personalizada -->
+	<authentication-manager >
+		<authentication-provider>
+			<jdbc-user-service data-source-ref="dataSource" 
+			users-by-username-query="select USUARIOS_USERNAME,USUARIOS_PASSWORD,USUARIOS_ESTATUS from USUARIOS where USUARIOS_USERNAME = ?" 
+			authorities-by-username-query="select USUARIOPERFIL_USERNAME,USUARIOPERFIL_PERFIL from USUARIOPERFIL where USUARIOPERFIL_USERNAME = ?" />
 		</authentication-provider>
 	</authentication-manager>
 </b:beans>
