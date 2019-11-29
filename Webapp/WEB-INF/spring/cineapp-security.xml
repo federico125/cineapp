@@ -17,12 +17,22 @@
 		<form-login default-target-url="/admin/index" login-page="/formLogin"/>
 	</http>
 
-	<authentication-manager>
+	<!-- Declaracion de usuarios en memoria, son usuarios que se agregan manualmente y que no vienen de base de datos, son usuarios estatico
+	esta fue la primera configuración usada -->
+	<!-- <authentication-manager>
 		<authentication-provider>
 			<user-service>
 				<user name="Federico" password="{noop}fhernandez" authorities="EDITOR" />
 				<user name="Eli" password="{noop}eGonzales" authorities="GERENTE" />
 			</user-service>
+		</authentication-provider>
+	</authentication-manager> -->
+	
+	<!-- El dataSource es el bean que tenemos declarado en nuestro archivo root-context.xml -->
+	<!--Autenticacion desde una base de datos -->
+	<authentication-manager >
+		<authentication-provider>
+			<jdbc-user-service data-source-ref="dataSource" />
 		</authentication-provider>
 	</authentication-manager>
 </b:beans>

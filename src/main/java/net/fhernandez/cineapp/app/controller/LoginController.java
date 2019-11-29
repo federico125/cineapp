@@ -3,6 +3,7 @@ package net.fhernandez.cineapp.app.controller;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +31,12 @@ public class LoginController {
 	public String mostrarPrincipalAdmin(Authentication authentication) { 
 		//Se recupera el nombre del usuario en la parte del back-end
 		System.out.println("username " + authentication.getName());
+		
+		//Recuperar los roles del usuario en sesión
+		for(GrantedAuthority rol: authentication.getAuthorities()) {
+			System.out.println("Rol de usuario " + rol.getAuthority());
+		}
+		
 		return "pagBienvenida"; 
 		}
 
