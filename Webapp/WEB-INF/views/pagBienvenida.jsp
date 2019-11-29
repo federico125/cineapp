@@ -28,7 +28,7 @@
 
       <div class="jumbotron">        
         <h3>Administración del Sistema</h3>
-        <p>Bienvenido(a) <sec:authorize property ="pricipal.username"/></p>
+        <p>Bienvenido(a) <sec:authentication property="principal.username"/></p>
       </div>
 
       <!-- FOOTER -->
