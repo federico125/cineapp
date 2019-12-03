@@ -64,37 +64,45 @@
 		<location>/WEB-INF/views/error/500.jsp</location>
 	</error-page>
 	
-	<!-- Configuracion del tipo autenticacion tipo BASIC -->
-	<security-constraint>
+	<!-- Configuracion del tipo autenticacion tipo BASIC AND FORM -->
+	<!-- <security-constraint>
 	<web-resource-collection>
 		<web-resource-name>URLs protegidas solo para el rol Editor</web-resource-name>
-		<!--Define the context-relative URL(s) to be protected -->
+		Define the context-relative URL(s) to be protected
 		<url-pattern>/horarios/*</url-pattern>
 		<url-pattern>/noticias/*</url-pattern>
 		<url-pattern>/peliculas/*</url-pattern>
 	</web-resource-collection>
 	<auth-constraint>
-		<!--Anyone with this role may access this area -->
+		Anyone with this role may access this area
 		<role-name>editor</role-name>
 	</auth-constraint>
-</security-constraint>
-<security-constraint>
+</security-constraint> -->
+<!-- <security-constraint>
 	<web-resource-collection>
 		<web-resource-name>URLs protegidas solo para el rol Gerente</web-resource-name>
-		<!--Define the context-relative URL(s) to be protected -->
+		Define the context-relative URL(s) to be protected
 		<url-pattern>/horarios/*</url-pattern>
 		<url-pattern>/noticias/*</url-pattern>
 		<url-pattern>/peliculas/*</url-pattern>
 		<url-pattern>/Banners/*</url-pattern>
 	</web-resource-collection>
 	<auth-constraint>
-		<!--Anyone with this role may access this area -->
+		Anyone with this role may access this area
 		<role-name>gerente</role-name>
 	</auth-constraint>
-</security-constraint>
-<login-config>
+</security-constraint> -->
+<!-- Configuracion del tipo autenticacion tipo BASIC -->
+<!-- <login-config>
 	<auth-method>BASIC</auth-method>
-</login-config>
+</login-config> -->
+<!-- Configuracion del tipo autenticacion tipo FORM -->
+<!-- <login-config> <auth-method>FORM</auth-method> 
+	<form-login-config> 
+		<form-login-page>/WEB-INF/view/login_Security_java_EE.jsp</form-login-page>             
+		<form-error-page>/WEB-INF/view/error_Security_java_EE.jsp</form-error-page> 
+	</form-login-config> 
+</login-config> -->
 	
 	
 

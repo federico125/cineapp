@@ -103,11 +103,11 @@ public class HomeController {
 		return "acerca";
 	}
 	
-	@RequestMapping(value ="/formLogin", method=RequestMethod.GET)
-	public String verLogin() {
-		return"formLogin";
+	@RequestMapping(value ="/formLogin", method=RequestMethod.GET) 
+	public String verLogin() { 
+		return"formLogin"; 
 	}
-	
+	 
 	@InitBinder
 	public void initBinder (WebDataBinder webDataBinder) {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
