@@ -46,11 +46,11 @@
 		
 		<!-- SE EMBEBE APACHE TOMCAT V9.0.26 -->
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
-		<dependency>
+		<!--<dependency>
     		<groupId>org.apache.tomcat.embed</groupId>
     		<artifactId>tomcat-embed-core</artifactId>
     		<version>9.0.26</version>
-		</dependency>
+		</dependency>-->
 		
 		<!-- SE AGREGAN DEPENDIAS DE SPRING SECURITY -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
